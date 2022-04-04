@@ -1,4 +1,4 @@
-package com.bridgelabz.hashtablesandbst;
+package com.bridgelabz.hashtablesandtree;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
@@ -29,6 +29,7 @@ public class HashTableTest {
 			result = result + word + " : " + hashMap.get(word) + "\n";
 		}
 		System.out.println(result);
+		System.out.println("Size is : " + hashMap.size());
 
 		Integer frequency = hashMap.get("be");
 		Integer expectedValue = 2;
@@ -56,6 +57,7 @@ public class HashTableTest {
 			result = result + word + " : " + hashMap.get(word) + "\n";
 		}
 		System.out.println(result);
+		System.out.println("Size is : " + hashMap.size());
 
 		Integer frequency = hashMap.get("paranoid");
 		Integer expectedValue = 3;
@@ -79,6 +81,7 @@ public class HashTableTest {
 		}
 		
 		hashMap.remove("avoidable");
+		
 		Integer expected = null;
 		Integer actualResult = hashMap.get("avoidable");
 		Assert.assertEquals(actualResult, expected);
@@ -88,5 +91,6 @@ public class HashTableTest {
 			result = result + word + " : " + hashMap.get(word) + "\n";
 		}
 		System.out.println(result);
+		System.out.println("Size is : " + hashMap.size());
 	}
 }

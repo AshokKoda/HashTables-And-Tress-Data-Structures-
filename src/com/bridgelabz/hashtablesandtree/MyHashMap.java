@@ -1,4 +1,4 @@
-package com.bridgelabz.hashtablesandbst;
+package com.bridgelabz.hashtablesandtree;
 
 public class MyHashMap<K, V> {
 
@@ -34,5 +34,13 @@ public class MyHashMap<K, V> {
 			System.out.println("Word is not present phrase");
 		}
 		return mapNode.getValue();
+	}
+
+	public int size() {
+		return linkedList.size();
+	}
+
+	public boolean isEmpty() {
+		return size() == 0;
 	}
 }

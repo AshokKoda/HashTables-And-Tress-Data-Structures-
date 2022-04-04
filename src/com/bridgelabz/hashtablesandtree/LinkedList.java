@@ -1,4 +1,4 @@
-package com.bridgelabz.hashtablesandbst;
+package com.bridgelabz.hashtablesandtree;
 
 public class LinkedList<K> {
 
@@ -38,5 +38,15 @@ public class LinkedList<K> {
 			tempNode = tempNode.getNext();
 		}
 		return tempNode;
+	}
+
+	public int size() {
+		INode<K> temp = head;
+		int size = 0;
+		while (temp != null) {
+			size++;
+			temp = temp.getNext();
+		}
+		return size;
 	}
 }

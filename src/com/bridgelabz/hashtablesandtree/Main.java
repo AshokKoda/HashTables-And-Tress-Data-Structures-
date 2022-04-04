@@ -1,4 +1,4 @@
-package com.bridgelabz.hashtablesandbst;
+package com.bridgelabz.hashtablesandtree;
 
 public class Main {
 

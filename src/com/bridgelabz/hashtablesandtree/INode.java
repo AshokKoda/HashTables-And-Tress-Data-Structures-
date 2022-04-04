@@ -1,12 +1,12 @@
-package com.bridgelabz.hashtablesandbst;
+package com.bridgelabz.hashtablesandtree;
 
 public interface INode<K> {
 
-	public K getKey();
-
 	public void setKey(K key);
 
-	public INode<K> getNext();
+	public K getKey();
 
 	public void setNext(INode<K> next);
+
+	public INode<K> getNext();
 }
